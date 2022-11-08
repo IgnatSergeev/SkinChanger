@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheatTable CheatEngineTableVersion="42">
+  <CheatEntries>
+    <CheatEntry>
+      <ID>8</ID>
+      <Description>"Ammo1"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>50293E94</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>9</ID>
+      <Description>"Ammo2"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>5F5CDE24</Address>
+    </CheatEntry>
+    <CheatEntry>
+      <ID>10</ID>
+      <Description>"Ammo3"</Description>
+      <VariableType>4 Bytes</VariableType>
+      <Address>364CAE74</Address>
+    </CheatEntry>
+  </CheatEntries>
+  <CheatCodes>
+    <CodeEntry>
+      <Description>Ammo: mov ecx,[eax]</Description>
+      <AddressString>server.dll+381506</AddressString>
+      <Before>
+        <Byte>8B</Byte>
+        <Byte>EC</Byte>
+        <Byte>8B</Byte>
+        <Byte>45</Byte>
+        <Byte>10</Byte>
+      </Before>
+      <Actual>
+        <Byte>8B</Byte>
+        <Byte>08</Byte>
+      </Actual>
+      <After>
+        <Byte>8B</Byte>
+        <Byte>45</Byte>
+        <Byte>14</Byte>
+        <Byte>41</Byte>
+        <Byte>89</Byte>
+      </After>
+    </CodeEntry>
+    <CodeEntry>
+      <Description>AmmoCmp:cmp dword ptr [esi+00000964],00</Description>
+      <AddressString>server.dll+5A25C6</AddressString>
+      <Before>
+        <Byte>2F</Byte>
+        <Byte>40</Byte>
+        <Byte>10</Byte>
+        <Byte>77</Byte>
+        <Byte>54</Byte>
+      </Before>
+      <Actual>
+        <Byte>83</Byte>
+        <Byte>BE</Byte>
+        <Byte>64</Byte>
+        <Byte>09</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+        <Byte>00</Byte>
+      </Actual>
+      <After>
+        <Byte>74</Byte>
+        <Byte>4B</Byte>
+        <Byte>8B</Byte>
+        <Byte>86</Byte>
+        <Byte>C8</Byte>
+      </After>
+    </CodeEntry>
+  </CheatCodes>
+  <UserdefinedSymbols/>
+</CheatTable>
