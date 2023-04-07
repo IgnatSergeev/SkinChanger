@@ -3,4 +3,4 @@ project(SkinChanger C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(SkinChanger main.c src/SkinChanger.c src/utils.cpp src/utils.c)
+add_executable(SkinChanger src/SkinChanger.c src/utils.c src/SkinChanger.h)
